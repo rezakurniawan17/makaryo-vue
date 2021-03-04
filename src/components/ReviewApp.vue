@@ -2,7 +2,7 @@
   <section class="text-gray-600 body-font" id="review-app">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-wrap -m-4">
-      <carousel :scroll-per-page="true" :navigation-enabled="true" :speed="2000" :auto-play="true" :perPageCustom="[[300, 1], [640,2], [768, 2], [1024, 3]]">
+      <carousel class="overflow-hidden" :navigation-enabled="true" :speed="2000" :auto-play="true" :perPageCustom="[[300, 1], [640,2], [768, 2], [1024, 3]]">
         <slide class="p-4 mb-6 lg:w-1/3 lg:mb-0">
           <div class="">
             <div class="h-full text-center">
