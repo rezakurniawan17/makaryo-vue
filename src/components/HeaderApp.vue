@@ -4,7 +4,7 @@
       <div class="container px-5 py-3 mx-auto lg:py-5 md:flex md:justify-between">
         <!-- Nav Brand -->
         <div class="flex items-center justify-between">
-          <a class="flex items-center font-medium text-gray-900 md:mb-0">
+          <a href="#" v-scroll-to="'#app'" class="flex items-center font-medium text-gray-900 md:mb-0">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 p-2 text-white bg-indigo-500 rounded-full" viewBox="0 0 24 24">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
@@ -20,11 +20,11 @@
         <div :class="isOpen ? 'block' : 'hidden'" class="items-center pb-2 mt-4 lg:mt-0 lg:pb-0 md:flex">
         <!-- Nav Items -->
           <nav class="block space-y-1 text-base md:space-y-0 md:flex" id="nav-items">
-            <a href="#" v-scroll-to="'#hero-app'"  :class="{ 'text-emerald-500' : isActive, 'font-bold': isActive }" class="block px-2 py-1 mr-5 hover:text-emerald-500">Beranda</a>
-            <a href="#" v-scroll-to="'#about-app'" class="block px-2 py-1 mr-5 hover:text-emerald-500">Tentang</a>
-            <a href="#" v-scroll-to="'#portofolio-app'" class="block px-2 py-1 mr-5 hover:text-emerald-500">Projek</a>
-            <a href="#" v-scroll-to="'#price-app'" class="block px-2 py-1 mr-5 hover:text-emerald-500">Harga</a>
-            <a href="#" v-scroll-to="'#contact-app'" class="block px-2 py-1 mr-5 hover:text-emerald-500">Kontak</a>
+            <a href="#" @click="selected = 1" :class="{'text-emerald-500':selected == 1}" v-scroll-to="'#hero-app'" class="block px-2 py-1 mr-5 hover:text-emerald-500">Beranda</a>
+            <a href="#" @click="selected = 2" :class="{'text-emerald-500':selected == 2}" v-scroll-to="'#about-app'" class="block px-2 py-1 mr-5 hover:text-emerald-500">Tentang</a>
+            <a href="#" @click="selected = 3" :class="{'text-emerald-500':selected == 3}" v-scroll-to="'#portofolio-app'" class="block px-2 py-1 mr-5 hover:text-emerald-500">Projek</a>
+            <a href="#" @click="selected = 4" :class="{'text-emerald-500':selected == 4}" v-scroll-to="'#price-app'" class="block px-2 py-1 mr-5 hover:text-emerald-500">Harga</a>
+            <a href="#" @click="selected = 5" :class="{'text-emerald-500':selected == 5}" v-scroll-to="'#contact-app'" class="block px-2 py-1 mr-5 hover:text-emerald-500">Kontak</a>
           </nav>
           <!-- Nav Button -->
           <button 
@@ -45,7 +45,7 @@ export default {
   data() {
     return {
       'isOpen': false,
-      'isActive': true,
+      selected: undefined
     }
   },
   methods: {

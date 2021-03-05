@@ -1,11 +1,11 @@
 <template>
-  <section class="text-gray-600 body-font" id="about-app" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="center-center" data-aos-offset="-100">
+  <section class="text-gray-600 body-font" id="about-app" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="-100">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col w-full mb-20 text-center" data-aos="fade-up">
       <!-- <h2 class="mb-1 text-xs font-medium tracking-widest text-indigo-500 title-font">TENTANG KAMI</h2> -->
-      <h1 class="mb-4 text-2xl font-medium tracking-widest text-emerald-600 sm:text-3xl title-font">TENTANG KAMI</h1>
+      <h1 class="mb-4 text-2xl font-semibold tracking-wide text-emerald-600 sm:text-3xl">Tentang Kami</h1>
       <p class="mx-auto text-base leading-relaxed lg:w-2/3">Makaryo merupakan solusi bagi Anda yang ingin melakukan Branding dengan platform media sosial.
-      <br>
+      <br class="hidden lg:block">
       Kami sudah beroperasi selama 1 tahun serta telah dipercaya oleh banyak organisasi dan perusahaan  
       </p>
     </div>
