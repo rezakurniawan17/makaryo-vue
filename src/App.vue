@@ -3,9 +3,14 @@
     <header-app></header-app>
     <hero-app></hero-app>
     <about-app></about-app>
+    <todo-app></todo-app>
+    <CTA1></CTA1>
     <portofolio-app></portofolio-app>
+    <static-app></static-app>
+    <CTA2></CTA2>
     <review-app></review-app>
     <price-app></price-app>
+    <step-app></step-app>
     <contact-app></contact-app>
     <footer-app></footer-app>
   </div>
@@ -20,11 +25,16 @@ import HeroApp from './components/HeroApp.vue'
 import PortofolioApp from './components/PortofolioApp.vue'
 import PriceApp from './components/PriceApp.vue'
 import ReviewApp from './components/ReviewApp.vue'
+import StepApp from './components/StepApp.vue'
+import StaticApp from './components/StaticApp.vue'
+import TodoApp from './components/TodoApp.vue'
+import CTA1 from './components/CTA1.vue'
+import CTA2 from './components/CTA2.vue'
 
 export default {
   name: 'App',
   components: {
-    AboutApp, ContactApp, FooterApp, HeaderApp, HeroApp, PortofolioApp, PriceApp, ReviewApp
+    AboutApp, ContactApp, FooterApp, HeaderApp, HeroApp, PortofolioApp, PriceApp, ReviewApp, StepApp, StaticApp, TodoApp, CTA1, CTA2
   }
 }
 
