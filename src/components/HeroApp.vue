@@ -5,7 +5,7 @@
         <img class="object-cover object-center w-5/6 mx-auto rounded" alt="hero" src="../assets/images/hero.png">
       </div>
       <div class="flex flex-col items-center text-center lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 md:items-start md:text-left">
-        <h1 class="mb-4 text-3xl font-medium text-white title-font sm:text-4xl">Bangun Brand Bisnis
+        <h1 class="mb-4 text-3xl font-medium text-white lg:text-5xl title-font sm:text-4xl">Bangun Brand Bisnis
           <br class="hidden lg:inline-block">Bersama Mekarya
         </h1>
         <p class="mb-8 leading-relaxed text-white">Mekarya menawarkan jasa pembangunan brand bisnis yang meliputi Logo, Desain, Copywriting, dan Website.</p>

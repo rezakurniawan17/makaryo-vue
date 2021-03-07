@@ -6,71 +6,20 @@
         <p class="mx-auto text-base leading-relaxed lg:w-2/3">Mekarya merupakan solusi bagi Anda yang ingin melakukan Branding dengan platform media sosial.</p>
       </div>
       <div class="flex flex-wrap -m-4">
-      <carousel class="overflow-hidden" :navigation-enabled="true" :speed="2000" :auto-play="true" :perPageCustom="[[300, 1], [640,2], [768, 2], [1024, 3]]">
-        <slide class="p-4 mb-6 lg:w-1/3 lg:mb-0">
-          <div class="">
-            <div class="h-full text-center">
-              <img alt="testimonial" class="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full" src="../assets/images/review1.jpg">
-              <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-              <span class="inline-block w-10 h-1 mt-6 mb-4 rounded bg-emerald-500"></span>
-              <h2 class="text-sm font-medium tracking-wider text-gray-900 title-font">HOLDEN CAULFIELD</h2>
-              <p class="text-gray-500">Senior Product Designer</p>
-            </div>
-          </div>
-        </slide>
-        <slide class="p-4 mb-6 lg:w-1/3 lg:mb-0">
-          <div >
-            <div class="h-full text-center">
-              <img alt="testimonial" class="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full" src="../assets/images/review2.jpg">
-              <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-              <span class="inline-block w-10 h-1 mt-6 mb-4 rounded bg-emerald-500"></span>
-              <h2 class="text-sm font-medium tracking-wider text-gray-900 title-font">ALPER KAMU</h2>
-              <p class="text-gray-500">UI Develeoper</p>
-            </div>
-          </div>
-        </slide>
-        <slide class="p-4 lg:w-1/3 lg:mb-0">
-          <div>
-            <div class="h-full text-center">
-              <img alt="testimonial" class="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full" src="../assets/images/review3.jpg">
-              <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-              <span class="inline-block w-10 h-1 mt-6 mb-4 rounded bg-emerald-500"></span>
-              <h2 class="text-sm font-medium tracking-wider text-gray-900 title-font">HENRY LETHAM</h2>
-              <p class="text-gray-500">CTO</p>
-            </div>
-          </div>
-        </slide>
-        <slide class="p-4 mb-6 lg:w-1/3 lg:mb-0">
-          <div class="">
-            <div class="h-full text-center">
-              <img alt="testimonial" class="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full" src="../assets/images/review4.jpg">
-              <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-              <span class="inline-block w-10 h-1 mt-6 mb-4 rounded bg-emerald-500"></span>
-              <h2 class="text-sm font-medium tracking-wider text-gray-900 title-font">HOLDEN CAULFIELD</h2>
-              <p class="text-gray-500">Senior Product Designer</p>
-            </div>
-          </div>
-        </slide>
-        <slide class="p-4 mb-6 lg:w-1/3 lg:mb-0">
-          <div >
-            <div class="h-full text-center">
-              <img alt="testimonial" class="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full" src="../assets/images/review5.jpg">
-              <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-              <span class="inline-block w-10 h-1 mt-6 mb-4 rounded bg-emerald-500"></span>
-              <h2 class="text-sm font-medium tracking-wider text-gray-900 title-font">ALPER KAMU</h2>
-              <p class="text-gray-500">UI Develeoper</p>
-            </div>
-          </div>
-        </slide>
-        <slide class="p-4 lg:w-1/3 lg:mb-0">
-          <div>
-            <div class="h-full text-center">
-              <img alt="testimonial" class="inline-block object-cover object-center w-20 h-20 mb-8 bg-gray-100 border-2 border-gray-200 rounded-full" src="../assets/images/review6.jpg">
-              <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
-              <span class="inline-block w-10 h-1 mt-6 mb-4 rounded bg-emerald-500"></span>
-              <h2 class="text-sm font-medium tracking-wider text-gray-900 title-font">HENRY LETHAM</h2>
-              <p class="text-gray-500">CTO</p>
-            </div>
+      <carousel class="overflow-hidden" :navigation-enabled="true" :speed="1000" :auto-play="true" :per-page-custom="[[200, 1], [768, 2]]">
+        <slide class="w-full p-4 md:w-1/2" v-for="reviewList in reviewLists" :key="reviewList.id">
+          <div class="h-full p-8 bg-gray-100 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 mb-4 text-gray-400" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="mb-6 leading-relaxed">{{ reviewList.message }}</p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" :src="reviewList.img" class="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full">
+              <span class="flex flex-col flex-grow pl-4">
+                <span class="font-medium text-gray-900 title-font">{{ reviewList.name }}</span>
+                <span class="text-sm text-gray-500">{{ reviewList.job }}</span>
+              </span>
+            </a>
           </div>
         </slide>
       </carousel>
@@ -87,13 +36,51 @@ export default {
   },
   data() {
     return {
+      reviewLists: [
+        {
+          message: 'Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.',
+          name: 'HOLDEN CAULFIELD',
+          job: 'Senior Product Designer',
+          img: require('../assets/images/review1.jpg')
+        },
+        {
+          message: 'Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.',
+          name: 'ALPER KAMU',
+          job: 'UI Develeoper',
+          img: require('../assets/images/review2.jpg')
+        },
+        {
+          message: 'Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.',
+          name: 'HENRY LETHAM',
+          job: 'CTO',
+          img: require('../assets/images/review3.jpg')
+        },
+        {
+          message: 'Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.',
+          name: 'Edinson Cavani',
+          job: 'Web Developer',
+          img: require('../assets/images/review4.jpg')
+        },
+        {
+          message: 'Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.',
+          name: 'Zidane Mahmud',
+          job: 'Senior Programmer',
+          img: require('../assets/images/review5.jpg')
+        },
+        {
+          message: 'Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.',
+          name: 'Malidi Iniesta',
+          job: 'CMO',
+          img: require('../assets/images/review6.jpg')
+        },
+      ],
       images: [
         'review1.jpg',
         'review2.jpg',
         'review3.jpg',
         'review4.jpg',
         'review5.jpg',
-      ]
+      ],
     }
   }
 }
