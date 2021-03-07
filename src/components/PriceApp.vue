@@ -1,18 +1,18 @@
 <template>
-  <section class="overflow-hidden text-gray-600 bg-gradient-to-br from-indigo-500 to-purple-800" id="price-app">
+  <section class="overflow-hidden text-gray-600 bg-indigo-50" id="price-app">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col w-full mb-20 text-center">
-        <h1 class="mb-2 text-3xl font-medium text-white sm:text-4xl title-font">Pricing</h1>
-        <p class="mx-auto text-base leading-relaxed text-gray-200 lg:w-2/3">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
-        <div class="flex mx-auto mt-6 overflow-hidden border-2 border-indigo-500 rounded">
-          <!-- <button class="px-4 py-1 text-white bg-indigo-500 focus:outline-none">Monthly</button>
-          <button class="px-4 py-1 focus:outline-none">Annually</button> -->
-        </div>
+        <h1 class="mb-2 text-3xl font-medium text-gray-900 sm:text-4xl title-font">Harga dan Paket</h1>
+        <p class="mx-auto text-base leading-relaxed text-gray-700 lg:w-2/3">Berikut varian hara dan paket Mekarya</p>
+        <!-- <div class="flex mx-auto mt-6 overflow-hidden border-2 border-indigo-500 rounded">
+          <button class="px-4 py-1 text-white bg-indigo-500 focus:outline-none">Monthly</button>
+          <button class="px-4 py-1 focus:outline-none">Annually</button>
+        </div> -->
       </div>
       <div class="flex flex-wrap -m-4">
         <div class="w-full p-4 xl:w-1/4 md:w-1/2" v-for="priceList in priceLists" :key="priceList.id">
-          <div class="relative flex flex-col h-full p-6 overflow-hidden font-medium bg-white rounded-lg shadow-2xl">
-            <span v-if="priceList.popular" class="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest text-white border-b-2 border-l-2 rounded-bl border-amber-500 bg-amber-500">POPULAR</span>
+          <div :class="{ 'border-2' : priceList.popular, 'border-indigo-500' : priceList.popular }" class="relative flex flex-col h-full p-6 overflow-hidden font-medium bg-white rounded-lg shadow-lg ">
+            <span v-if="priceList.popular" class="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest text-white bg-indigo-500 border-b-2 border-l-2 border-indigo-500 rounded-bl">POPULAR</span>
             <h2 class="mb-1 text-sm font-semibold tracking-widest text-gray-600 uppercase title-font">{{ priceList.title }}</h2>
             <h1 class="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
               <span>{{ priceList.price }}</span>
