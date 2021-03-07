@@ -1,5 +1,6 @@
 <template>
-  <div id="app" class="debug-screens">
+  <!-- class="debug-screens" -->
+  <div id="app">
     <header-app></header-app>
     <hero-app></hero-app>
     <doing-app></doing-app>
