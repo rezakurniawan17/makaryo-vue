@@ -1,7 +1,7 @@
 <template>
-  <section class="py-24">
+  <section class="px-5 py-24" id="doing-app">
     <div class="mb-10 text-center">
-      <h1 class="mb-4 text-2xl font-semibold text-center text-gray-900 sm:text-3xl">Kata Mereka Tentang Mekarya</h1>
+      <h1 class="mb-4 text-2xl font-semibold text-center text-gray-900 sm:text-3xl">Tentang Mekarya</h1>
       <p class="mx-auto text-base leading-relaxed lg:w-2/3">Mekarya merupakan solusi bagi Anda yang ingin melakukan Branding dengan platform media sosial.</p>
     </div>
     <div class="flex-wrap items-start justify-center gap-8 text-center sm:flex">

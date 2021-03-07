@@ -9,7 +9,7 @@
               <button class="px-4 py-3 mt-4 text-sm font-medium text-white uppercase bg-indigo-600 rounded hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500">Pesan Sekarang</button>
           </div>
         </div>
-        <div class="flex items-center justify-center w-full mt-6 md:mt-0 md:w-1/2">
+        <div v-scroll-to="'#contact-app'" class="flex items-center justify-center w-full mt-6 md:mt-0 md:w-1/2">
             <img class="w-full h-full max-w-lg" src="../assets/images/hero.png" alt="">
         </div>
       </div>

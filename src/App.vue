@@ -12,13 +12,14 @@
     <CTA2></CTA2>
     <step-app></step-app>
     <contact-app></contact-app>
+    <faq-app></faq-app>
     <footer-app></footer-app>
   </div>
 </template>
 
 <script>
 import FeatureApp from './components/FeatureApp.vue'
-import ContactApp from './components/ContactApp.vue'
+import FaqApp from './components/FaqApp.vue'
 import FooterApp from './components/FooterApp.vue'
 import HeaderApp from './components/HeaderApp.vue'
 import HeroApp from './components/HeroApp.vue'
@@ -30,11 +31,12 @@ import StaticApp from './components/StaticApp.vue'
 import DoingApp from './components/DoingApp.vue'
 import CTA1 from './components/CTA1.vue'
 import CTA2 from './components/CTA2.vue'
+import ContactApp from './components/ContactApp.vue'
 
 export default {
   name: 'App',
   components: {
-    FeatureApp, ContactApp, FooterApp, DoingApp, HeaderApp, HeroApp, PortofolioApp, PriceApp, ReviewApp, StepApp, StaticApp, CTA1, CTA2
+    FeatureApp, FaqApp, FooterApp, DoingApp, HeaderApp, HeroApp, PortofolioApp, PriceApp, ReviewApp, StepApp, StaticApp, CTA1, CTA2, ContactApp
   }
 }
 

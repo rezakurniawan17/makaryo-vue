@@ -1,5 +1,6 @@
 <template>
-  <section class="bg-gradient-to-br from-indigo-500 to-purple-500">
+<div></div>
+  <!-- <section class="bg-gradient-to-br from-indigo-500 to-purple-500">
     <div class=" dark:bg-gray-800">
       <div class="z-20 w-full px-4 py-12 mx-auto text-center sm:px-6 lg:py-24 lg:px-8">
           <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
@@ -19,5 +20,5 @@
           </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </template>

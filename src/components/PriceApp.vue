@@ -28,7 +28,7 @@
               </p>
             </div>
             <div class="mb-3"></div>
-            <button class="flex items-center w-full px-4 py-2 mt-auto text-white border-0 rounded bg-amber-500 focus:outline-none hover:bg-amber-600">Pesan Paket
+            <button v-scroll-to="'#contact-app'" class="flex items-center w-full px-4 py-2 mt-auto text-white border-0 rounded bg-amber-500 focus:outline-none hover:bg-amber-600">Pesan Paket
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
