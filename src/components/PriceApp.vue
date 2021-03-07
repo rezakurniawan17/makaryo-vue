@@ -12,7 +12,7 @@
       <div class="flex flex-wrap -m-4">
         <div class="w-full p-4 xl:w-1/4 md:w-1/2" v-for="priceList in priceLists" :key="priceList.id">
           <div class="relative flex flex-col h-full p-6 overflow-hidden font-medium bg-white rounded-lg shadow-2xl">
-            <span class="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest text-white border-b-2 border-l-2 rounded-bl border-amber-500 bg-amber-500">POPULAR</span>
+            <span v-if="priceList.popular" class="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest text-white border-b-2 border-l-2 rounded-bl border-amber-500 bg-amber-500">POPULAR</span>
             <h2 class="mb-1 text-sm font-semibold tracking-widest text-gray-600 uppercase title-font">{{ priceList.title }}</h2>
             <h1 class="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
               <span>{{ priceList.price }}</span>
@@ -28,7 +28,7 @@
               </p>
             </div>
             <div class="mb-3"></div>
-            <button class="flex items-center w-full px-4 py-2 mt-auto text-white border-0 rounded bg-amber-500 focus:outline-none hover:bg-amber-600">Pesan Sekarang
+            <button class="flex items-center w-full px-4 py-2 mt-auto text-white border-0 rounded bg-amber-500 focus:outline-none hover:bg-amber-600">Pesan Paket
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
@@ -36,79 +36,6 @@
             <!-- <p class="mt-3 text-xs text-gray-500">Literally you probably haven't heard of them jean shorts.</p> -->
           </div>
         </div>
-        <!-- <div class="w-full p-4 xl:w-1/4 md:w-1/2">
-          <div class="relative flex flex-col h-full p-6 overflow-hidden border-2 border-indigo-500 rounded-lg">
-            <span class="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest text-white bg-indigo-500 rounded-bl">POPULAR</span>
-            <h2 class="mb-1 text-sm font-medium tracking-widest title-font">WEB BASIC</h2>
-            <h1 class="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
-              <span>125.000</span>
-              <span class="ml-1 text-lg font-normal text-gray-500">/mo</span>
-            </h1>
-            <div v-for="wb in webBasic" :key="wb.id">
-              <p class="flex items-center mb-2 text-gray-600">
-                <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-400 rounded-full">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                    <path d="M20 6L9 17l-5-5"></path>
-                  </svg>
-                </span>{{ wb }}
-              </p>
-            </div>
-            <button class="flex items-center w-full px-4 py-2 mt-auto text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">Button
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
-            <p class="mt-3 text-xs text-gray-500">Literally you probably haven't heard of them jean shorts.</p>
-          </div>
-        </div>
-        <div class="w-full p-4 xl:w-1/4 md:w-1/2">
-          <div class="relative flex flex-col h-full p-6 overflow-hidden border-2 border-gray-300 rounded-lg">
-            <h2 class="mb-1 text-sm font-medium tracking-widest title-font">WEB PRO</h2>
-            <h1 class="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
-              <span>183.000</span>
-              <span class="ml-1 text-lg font-normal text-gray-500">/mo</span>
-            </h1>
-            <div v-for="wp in webPro" :key="wp.id">
-              <p class="flex items-center mb-2 text-gray-600">
-                <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-400 rounded-full">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                    <path d="M20 6L9 17l-5-5"></path>
-                  </svg>
-                </span>{{ wp }}
-              </p>
-            </div>
-            <button class="flex items-center w-full px-4 py-2 mt-auto text-white bg-gray-400 border-0 rounded focus:outline-none hover:bg-gray-500">Button
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
-            <p class="mt-3 text-xs text-gray-500">Literally you probably haven't heard of them jean shorts.</p>
-          </div>
-        </div>
-        <div class="w-full p-4 xl:w-1/4 md:w-1/2">
-          <div class="relative flex flex-col h-full p-6 overflow-hidden border-2 border-gray-300 rounded-lg">
-            <h2 class="mb-1 text-sm font-medium tracking-widest title-font">WEB ULTIMATE</h2>
-            <h1 class="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
-              <span>283.000</span>
-              <span class="ml-1 text-lg font-normal text-gray-500">/mo</span>
-            </h1>
-            <div v-for="wu in webUltimate" :key="wu.id" class="last:mb-6">
-              <p class="flex items-center mb-2 text-gray-600">
-                <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-400 rounded-full">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                    <path d="M20 6L9 17l-5-5"></path>
-                  </svg>
-                </span>{{ wu }}
-              </p>
-            </div>
-            <button class="flex items-center w-full px-4 py-2 mt-auto text-white bg-gray-400 border-0 rounded focus:outline-none hover:bg-gray-500">Button
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
-            <p class="mt-3 text-xs text-gray-500">Literally you probably haven't heard of them jean shorts.</p>
-          </div>
-        </div> -->
       </div>    
     </div>
   </section>
