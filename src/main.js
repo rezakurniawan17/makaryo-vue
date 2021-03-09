@@ -5,10 +5,8 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import VueCarousel from 'vue-carousel'
 
-var VueScrollTo = require('vue-scrollto');
-Vue.use(VueScrollTo, {
-  duration: '1500'
-})
+import VueScrollactive from 'vue-scrollactive';
+Vue.use(VueScrollactive)
 
 Vue.use(VueCarousel)
 

@@ -19,14 +19,14 @@
         <!-- Nav Items -->
         <div :class="isOpen ? 'block' : 'hidden'" class="items-center pb-2 mt-4 lg:mt-0 lg:pb-0 md:flex">
         <!-- Nav Items -->
-          <nav class="block space-y-1 text-base md:space-y-0 md:flex" id="nav-items">
-            <a href="#" @click="selected = 6" :class="{'text-indigo-600':selected == 6}" v-scroll-to="'#app'" class="block px-2 py-1 mr-5 hover:text-indigo-500">Beranda</a>
-            <a href="#" @click="selected = 1" :class="{'text-indigo-600':selected == 1}" v-scroll-to="'#doing-app'" class="block px-2 py-1 mr-5 hover:text-indigo-500">Tentang Kami</a>
-            <a href="#" @click="selected = 2" :class="{'text-indigo-600':selected == 2}" v-scroll-to="'#portofolio-app'" class="block px-2 py-1 mr-5 hover:text-indigo-500">Portofolio</a>
-            <a href="#" @click="selected = 3" :class="{'text-indigo-600':selected == 3}" v-scroll-to="'#price-app'" class="block px-2 py-1 mr-5 hover:text-indigo-500">Harga</a>
-            <a href="#" @click="selected = 4" :class="{'text-indigo-600':selected == 4}" v-scroll-to="'#contact-app'" class="block px-2 py-1 mr-5 hover:text-indigo-500">Kontak</a>
-            <a href="#" @click="selected = 5" :class="{'text-indigo-600':selected == 5}" v-scroll-to="'#faq-app'" class="block px-2 py-1 mr-5 hover:text-indigo-500">FAQ</a>
-          </nav>
+          <scrollactive :offset="70" active-class="is-active" class="block space-y-1 text-base md:space-y-0 md:flex" id="nav-items">
+            <a href="#app" class="block px-2 py-1 mr-5 is-active scrollactive-item hover:text-indigo-500">Beranda</a>
+            <a href="#doing-app" class="block px-2 py-1 mr-5 scrollactive-item hover:text-indigo-500">Tentang Kami</a>
+            <a href="#portofolio-app" class="block px-2 py-1 mr-5 scrollactive-item hover:text-indigo-500">Portofolio</a>
+            <a href="#price-app" class="block px-2 py-1 mr-5 scrollactive-item hover:text-indigo-500">Harga</a>
+            <a href="#contact-app" class="block px-2 py-1 mr-5 scrollactive-item hover:text-indigo-500">Kontak</a>
+            <a href="#faq-app" class="block px-2 py-1 mr-5 scrollactive-item hover:text-indigo-500">FAQ</a>
+          </scrollactive>
           <!-- Nav Button -->
           <button 
             v-scroll-to="'#contact-app'" class="inline-flex items-center px-5 py-2 mt-4 text-base text-white bg-indigo-500 border-0 rounded hover:bg-indigo-600 focus:outline-none md:mt-0">
@@ -56,3 +56,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.is-active {
+  color: #4338CA
+;
+}
+</style>
