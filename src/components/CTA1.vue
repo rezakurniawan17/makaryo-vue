@@ -12,9 +12,13 @@
           </h2>
           <div class="lg:mt-0 lg:flex-shrink-0">
               <div class="inline-flex mt-12 rounded-md shadow">
-                  <button v-scroll-to="'#contact-app'" type="button" class="w-full px-6 py-4 text-base font-semibold text-center text-white transition duration-200 ease-in rounded-lg shadow-md bg-amber-500 hover:bg-amber-600 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ">
-                      Dapatkan Sekarang
-                  </button>
+                  <scrollactive>
+                    <a href="#contact-app" class="scrollactive-item ">
+                        <button type="button" class="w-full px-6 py-4 text-lg font-semibold text-center text-white transition duration-300 rounded-md shadow-md bg-amber-500 hover:bg-amber-600 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ">
+                            Dapatkan Sekarang
+                        </button>
+                    </a>
+                  </scrollactive>
               </div>
           </div>
       </div>

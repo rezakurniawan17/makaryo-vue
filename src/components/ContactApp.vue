@@ -1,16 +1,16 @@
 <template>
 <div class="relative" id="contact-app">
-  <div class="inset-0 z-10 w-full h-screen overflow-y-auto">
+  <div class="inset-0 z-10 w-full h-full py-24 overflow-y-auto">
       <div class="absolute inset-0 w-full h-full bg-indigo-700 opacity-75">
       </div>
-      <div class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-          <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">
+      <div class="flex items-end justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+          <span class="hidden sm:inline-block sm:align-middle" aria-hidden="true">
           </span>
           <div class="relative inline-block overflow-hidden transition-all transform sm:align-middle sm:max-w-lg" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
               <div>
                   <div class="p-8 bg-white rounded-lg shadow">
                       <div class="bg-white dark:bg-gray-800 ">
-                          <div class="z-20 w-full px-4 py-12 mx-auto text-center sm:px-6 lg:py-16 lg:px-8">
+                          <div class="z-20 w-full px-4 py-12 mx-auto text-center sm:px-6 lg:py-12 lg:px-8">
                               <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-2xl">
                                   <span class="block">
                                       Ingin Membeli Paket ?

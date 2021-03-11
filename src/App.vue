@@ -1,16 +1,14 @@
 <template>
   <!-- class="debug-screens" -->
-  <div id="app">
+  <div id="app" class="debug-screens">
     <header-app></header-app>
     <hero-app></hero-app>
     <doing-app></doing-app>
     <feature-app></feature-app>
-    <portofolio-app></portofolio-app>
     <CTA1></CTA1>
     <static-app></static-app>
     <review-app></review-app>
     <price-app></price-app>
-    <CTA2></CTA2>
     <step-app></step-app>
     <contact-app></contact-app>
     <faq-app></faq-app>
@@ -24,20 +22,18 @@ import FaqApp from './components/FaqApp.vue'
 import FooterApp from './components/FooterApp.vue'
 import HeaderApp from './components/HeaderApp.vue'
 import HeroApp from './components/HeroApp.vue'
-import PortofolioApp from './components/PortofolioApp.vue'
 import PriceApp from './components/PriceApp.vue'
 import ReviewApp from './components/ReviewApp.vue'
 import StepApp from './components/StepApp.vue'
 import StaticApp from './components/StaticApp.vue'
 import DoingApp from './components/DoingApp.vue'
 import CTA1 from './components/CTA1.vue'
-import CTA2 from './components/CTA2.vue'
 import ContactApp from './components/ContactApp.vue'
 
 export default {
   name: 'App',
   components: {
-    FeatureApp, FaqApp, FooterApp, DoingApp, HeaderApp, HeroApp, PortofolioApp, PriceApp, ReviewApp, StepApp, StaticApp, CTA1, CTA2, ContactApp
+    FeatureApp, FaqApp, FooterApp, DoingApp, HeaderApp, HeroApp, PriceApp, ReviewApp, StepApp, StaticApp, CTA1, ContactApp
   }
 }
 

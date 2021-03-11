@@ -2,51 +2,54 @@
   <section class="text-gray-600">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col w-full mb-20 text-center">
-        <h1 class="mb-4 text-2xl font-medium text-gray-900 sm:text-3xl">Pencapaian kami selama 1 tahun</h1>
+        <h1 class="mb-4 text-3xl font-bold tracking-tight text-gray-900 duration-500 transform sm:text-3xl hover:text-indigo-600 ">Pencapaian kami selama 1 tahun</h1>
         <p class="mx-auto text-base leading-relaxed lg:w-2/3">Dengan kekuatan super kami, inilah yang telah kami capai</p>
       </div>
       <div class="flex flex-wrap -m-4 text-center">
-        <div class="w-full p-4 md:w-1/4 sm:w-1/2">
-          <div class="px-4 py-6 transition-all duration-300 ease-in-out transform border-2 border-gray-200 rounded-lg hover:border-indigo-500 hover:-translate-y-4">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block w-12 h-12 mb-3 text-indigo-600" viewBox="0 0 24 24">
+        <div class="w-full p-4 md:w-1/4 sm:w-1/2" v-for="statList in statLists" :key="statList.id"
+>
+          <div  class="px-4 py-6 transition-all duration-300 ease-in-out transform border-2 border-gray-200 rounded-lg group hover:border-indigo-500 hover:-translate-y-4">
+            <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block w-12 h-12 mb-3 text-indigo-600" viewBox="0 0 24 24">
               <path d="M8 17l4 4 4-4m-4-5v9"></path>
               <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
-            </svg>
-            <h2 class="text-3xl font-medium text-gray-900 title-font">43+</h2>
-            <p class="leading-relaxed">Klien Website</p>
-          </div>
-        </div>
-        <div class="w-full p-4 md:w-1/4 sm:w-1/2">
-          <div class="px-4 py-6 transition-all duration-300 ease-in-out transform border-2 border-gray-200 rounded-lg hover:border-indigo-500 hover:-translate-y-4">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block w-12 h-12 mb-3 text-indigo-600" viewBox="0 0 24 24">
-              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-            </svg>
-            <h2 class="text-3xl font-medium text-gray-900 title-font">64+</h2>
-            <p class="leading-relaxed">Klien Sosial Media</p>
-          </div>
-        </div>
-        <div class="w-full p-4 md:w-1/4 sm:w-1/2">
-          <div class="px-4 py-6 transition-all duration-300 ease-in-out transform border-2 border-gray-200 rounded-lg hover:border-indigo-500 hover:-translate-y-4">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block w-12 h-12 mb-3 text-indigo-600" viewBox="0 0 24 24">
-              <path d="M3 18v-6a9 9 0 0118 0v6"></path>
-              <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
-            </svg>
-            <h2 class="text-3xl font-medium text-gray-900 title-font">13+</h2>
-            <p class="leading-relaxed">Layanan Harian</p>
-          </div>
-        </div>
-        <div class="w-full p-4 md:w-1/4 sm:w-1/2">
-          <div class="px-4 py-6 transition-all duration-300 ease-in-out transform border-2 border-gray-200 rounded-lg hover:border-indigo-500 hover:-translate-y-4">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="inline-block w-12 h-12 mb-3 text-indigo-600" viewBox="0 0 24 24">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-            <h2 class="text-3xl font-medium text-gray-900 title-font">300.000</h2>
-            <p class="leading-relaxed">Jangkauan</p>
+            </svg> -->
+            <img :src="statList.img" class="inline-block w-12 h-12 mb-3" alt="">
+            <h2 class="text-xl font-medium text-gray-900 title-font">{{ statList.name }}</h2>
+            <p class="text-4xl font-bold leading-relaxed duration-300 transform group-hover:text-indigo-600">{{statList.value }}</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+v-<script>
+export default {
+  data() {
+    return {
+      statLists: [
+        {
+          name: 'Klien Website',
+          value: '43+',
+          img: require('../assets/icons/download-cloud.svg')
+        },
+        { 
+          name: 'Klien Media Sosial',
+          value: '64+', 
+          img: require('../assets/icons/users.svg') 
+        },
+        { 
+          name: 'Layanan Harian', 
+          value: '13+', 
+          img:require('../assets/icons/navigation.svg') 
+        },
+        { 
+          name: 'Jangkauan', 
+          value: '300.000',
+          img:require('../assets/icons/search.svg') 
+        },
+      ]
+    }
+  }
+}
+</script>

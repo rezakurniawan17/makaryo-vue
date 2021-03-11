@@ -1,43 +1,80 @@
 <template>
-<section id="faq-app">
-<div class="px-5 py-20 bg-lightblue">
-    <div class="flex flex-col max-w-6xl mx-auto md:flex-row">
-        <h2 class="w-full mr-8 text-3xl font-extrabold leading-9 md:w-1/3">
-            Frequently-asked questions
-        </h2>
-        <dl class="w-full md:w-2/3">
-            <dt class="mb-4">
-                <h3 class="text-xl font-semibold">
-                    We already have ongoing projects. Will Valohai easily integrate with them?
-                </h3>
-            </dt>
-            <dd class="mb-16">
-                <p>
-                    Running existing machine learning projects in Valohai is very simple! Integration only requires adding a valohai.yaml configuration file. Moving projects in and out of Valohai is easy – the integration is only the configuration file.
-                </p>
-            </dd>
-            <dt class="mb-4">
-                <h3 class="text-xl font-semibold">
-                    How do you compare to other data science platforms?
-                </h3>
-            </dt>
-            <dd class="mb-16">
-                <p>
-                    We don’t. Valohai isn’t a data science platform; it&#x27;s a Machine Learning Management Platform that handles the whole ML pipeline from feature extraction, to training of your model and to deploying it into production in a reproducible manner. Data science platforms offer hosted notebooks and AutoML solutions.
-                </p>
-            </dd>
-            <dt class="mb-4">
-                <h3 class="text-xl font-semibold">
-                    Does Valohai charge for computation?
-                </h3>
-            </dt>
-            <dd class="mb-16">
-                <p>
-                    Depends. Most of our customers use their own cloud and thus pay for usage according to their own agreements. Valohai doesn&#x27;t charge anything on top of the per-user license fee. If you don&#x27;t have a cloud provider, you can use our AWS, GCP and Azure accounts, and we&#x27;ll only charge you for what you use.
-                </p>
-            </dd>
-        </dl>
+  <div class="px-5 py-20 bg-lightblue" id="faq-app">
+    <div class="flex flex-col max-w-6xl mx-auto lg:flex-row">
+      <h2 class="w-full pt-8 mr-8 text-3xl font-bold leading-9 tracking-tight lg:w-1/3">
+        Pertanyaan dan jawaban yang dapat membantu kamu
+      </h2>
+      <dl class="w-full divide-y-2 divide-indigo-300 lg:w-2/3 divide">
+        <div v-for="listFAQ in listFAQs" :key="listFAQ.id">
+          <dt class="pt-8 mb-2">
+            <h3 class="text-xl font-semibold">
+              {{ listFAQ.ask }}
+            </h3>
+          </dt>
+          <dd class="pb-8">
+            <p>
+              {{ listFAQ.question }}
+            </p>
+          </dd>
+        </div>
+      </dl>
     </div>
-</div>
-</section>
+  </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      listFAQs: [
+        {
+          ask : 'Bagaimana cara kerja Mekarya ?',
+          question: 'Setelah melakukan proses pembayaran, klien diminta untuk mengisi form brief. Setelah itu tim kami akan melakukan riset interest danbehavior kostumer klien. Setelah deal, tim akan mulai melakukan maintenance. Di akhir pelayanan, lien akan mendapat development report',
+          isShow: true
+        },
+        {
+          ask : 'Berapa lama pengerjaannya ?',
+          question: 'Setelah proses concept dealing, tim kami akan melakukan riset selama 5 hari. Setelah itu, tim kami akan mulai melakukan maintenance web maupun sosial media kamu',
+          isShow: false
+        },
+        { 
+          ask : 'Apa fasilitas Pembuatan Website ?', 
+          question: 'Kamu akan mendapat template bebas pilih, free domain, free unlimited hosting, free SSL, optimasi SEO, free professional email, tampilan mobile, restorasi logo, pembuatan halaman, pembuatan banner slider, laporan perkembangan dan layanan coaching',
+          isShow: false
+        },
+        { 
+          ask : 'Apa fasilitas Manajemen Media Sosial ?', 
+          question: 'Kamu akan mendapat template bebas pilih, pembuatan feed, pembuatan carousel feed, pembuatan story, pembuatan video promosi, auto-post facebook, copywriting, laporan perkembangan dan layanan coaching.',
+          isShow: false
+        },
+        { 
+          ask : 'Bahan foto atau video dari siapa ?', 
+          question: 'Bahan foto dan video dari kamu ya. Tenang, nanti foto dan videomu akan kami editin kok',
+          isShow: false
+        },
+        { 
+          ask : 'Bagaimana jika tidak punya idea desain ?', 
+          question: 'Santai aja, jika kamu tidak punya ide desain, kami bantu pikirkan ide desainnya 100% dari mulai desain, copywriting, caption sampai posting tiap hari. Pokoknya kamu tinggal duduk manis kontrol masalah produksi usahamu',
+          isShow: false
+        },
+        { 
+          ask : 'Apakah bisa revisi desain ?', 
+          question: 'Bisa banget dong. Minor revisi ya',
+          isShow: false
+        },
+        { 
+          ask : 'Bisakah merubah brief saat proses pengerjaan ?', 
+          question: 'Mohon maaf kami tidak bisa merubah brief di tengah proses pengerjaan. Jadi, setiap saat proses concept dealing, pertimbangkan matang-matang ya',
+          isShow: false
+        },
+        { 
+          ask : 'Bagaimana sistem pembayarannya ?', 
+          question: '100% lunas dimuka ya. Tenang. Kami menjamin proses akan berjalan sesuai tanggal yang telah disepakati bersama. Apabila terjadi molor, maka 100% uang kamu akan kami kembalikan',
+          isShow: false
+        },
+
+      ]
+    }
+  },
+}
+</script>

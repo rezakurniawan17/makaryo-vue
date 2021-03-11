@@ -1,72 +1,29 @@
 <template>
-  <section class="text-gray-600 body-font" id="portofolio-app">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col w-full mb-20 text-center">
-        <h1 class="mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font">Master Cleanse Reliac Heirloom</h1>
-        <p class="mx-auto text-base leading-relaxed lg:w-2/3">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
-      </div>
-      <div class="flex flex-wrap -m-4">
-        <div class="p-4 lg:w-1/3 sm:w-1/2">
-          <div class="relative flex">
-            <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full" src="https://dummyimage.com/600x360">
-            <div class="relative z-10 w-full px-8 py-10 bg-white border-4 border-gray-200 opacity-0 hover:opacity-100">
-              <h2 class="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">THE SUBTITLE</h2>
-              <h1 class="mb-3 text-lg font-medium text-gray-900 title-font">Shooting Stars</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+
+<div class="relative overflow-hidden bg-white dark:bg-gray-800 lg:flex lg:items-center">
+    <div class="z-20 w-full px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+        <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
+            <span class="block">
+                Mother hearth host your travel
+            </span>
+        </h2>
+        <p class="mt-4 text-gray-400 text-md">
+            The state of Utah in the united states is home to lots of beautiful National parks, Bryce national canion park ranks as three of the most magnificient &amp; awe inspiring.
+        </p>
+        <div class="lg:mt-0 lg:flex-shrink-0">
+            <div class="inline-flex mt-12 rounded-md shadow">
+                <button type="button" class="w-full px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-green-500 rounded-lg shadow-md hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ">
+                    Get started
+                </button>
             </div>
-          </div>
         </div>
-        <div class="p-4 lg:w-1/3 sm:w-1/2">
-          <div class="relative flex">
-            <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full" src="https://dummyimage.com/601x361">
-            <div class="relative z-10 w-full px-8 py-10 bg-white border-4 border-gray-200 opacity-0 hover:opacity-100">
-              <h2 class="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">THE SUBTITLE</h2>
-              <h1 class="mb-3 text-lg font-medium text-gray-900 title-font">The Catalyzer</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 lg:w-1/3 sm:w-1/2">
-          <div class="relative flex">
-            <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full" src="https://dummyimage.com/603x363">
-            <div class="relative z-10 w-full px-8 py-10 bg-white border-4 border-gray-200 opacity-0 hover:opacity-100">
-              <h2 class="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">THE SUBTITLE</h2>
-              <h1 class="mb-3 text-lg font-medium text-gray-900 title-font">The 400 Blows</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 lg:w-1/3 sm:w-1/2">
-          <div class="relative flex">
-            <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full" src="https://dummyimage.com/602x362">
-            <div class="relative z-10 w-full px-8 py-10 bg-white border-4 border-gray-200 opacity-0 hover:opacity-100">
-              <h2 class="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">THE SUBTITLE</h2>
-              <h1 class="mb-3 text-lg font-medium text-gray-900 title-font">Neptune</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 lg:w-1/3 sm:w-1/2">
-          <div class="relative flex">
-            <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full" src="https://dummyimage.com/605x365">
-            <div class="relative z-10 w-full px-8 py-10 bg-white border-4 border-gray-200 opacity-0 hover:opacity-100">
-              <h2 class="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">THE SUBTITLE</h2>
-              <h1 class="mb-3 text-lg font-medium text-gray-900 title-font">Holden Caulfield</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 lg:w-1/3 sm:w-1/2">
-          <div class="relative flex">
-            <img alt="gallery" class="absolute inset-0 object-cover object-center w-full h-full" src="https://dummyimage.com/606x366">
-            <div class="relative z-10 w-full px-8 py-10 bg-white border-4 border-gray-200 opacity-0 hover:opacity-100">
-              <h2 class="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">THE SUBTITLE</h2>
-              <h1 class="mb-3 text-lg font-medium text-gray-900 title-font">Alper Kamu</h1>
-              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+    <div class="flex items-center gap-8 p-8 lg:p-24">
+        <img src="../assets/images/portofolio1.png" class="w-1/2 rounded-lg" alt="Tree"/>
+        <div>
+            <img src="../assets/images/portofolio1.png" class="mb-8 rounded-lg" alt="Tree"/>
+            <img src="../assets/images/portofolio1.png" class="rounded-lg" alt="Tree"/>
+        </div>
+    </div>
+</div>
 </template>
