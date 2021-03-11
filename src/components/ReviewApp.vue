@@ -1,17 +1,17 @@
 <template>
-  <section class="text-gray-600 body-font" id="review-app">
+  <section class="text-gray-600 body-font" id="review-app" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
     <div class="container px-5 py-24 mx-auto">
       <div class="mb-20 text-center">
         <h1 class="mb-4 text-3xl font-bold tracking-tight text-center text-gray-900 duration-500 transform hover:text-indigo-600 sm:text-3xl">Kata Mereka Tentang Mekarya</h1>
-        <p class="mx-auto text-base leading-relaxed lg:w-2/3">Banyak orang dan perusahaan yang telah menggunakan Mekarya, saatnya giliran Anda</p>
+        <p class="mx-auto text-base leading-relaxed lg:w-2/3">Banyak orang dan perusahaan yang telah menggunakan Mekarya, saatnya giliran kamu</p>
       </div>
       <div class="flex flex-wrap -m-4">
         <carousel class="overflow-hidden" :navigation-enabled="true" :speed="1000" :auto-play="true" :per-page-custom="[[200, 1], [768, 2]]">
           <slide class="px-5 py-10" v-for="reviewList in reviewLists" :key="reviewList.id">
             <div class="w-full px-5 pt-5 pb-10 mx-auto text-gray-800 bg-white rounded-lg shadow-lg dark:bg-gray-800 dark:text-gray-50">
               <div class="w-full pt-1 pb-5 mx-auto -mt-16 text-center">
-                <a href="#" class="relative block">
-                    <img alt="profil" :src="reviewList.img" class="object-cover w-20 h-20 mx-auto rounded-full "/>
+                <a class="relative block">
+                  <img alt="profil" :src="reviewList.img" class="object-cover w-20 h-20 mx-auto rounded-full "/>
                 </a>
               </div>
               <div class="w-full mb-10">
@@ -26,7 +26,7 @@
                 </div>
               </div>
               <div class="w-full">
-                  <p class="font-bold text-center text-indigo-600 text-md">
+                  <p class="font-bold text-center text-indigo-600 uppercase text-md">
                       {{ reviewList.name }}
                   </p>
                   <p class="text-sm font-medium text-center text-gray-500 dark:text-gray-300">
@@ -52,38 +52,38 @@ export default {
       reviewLists: [
         {
           message: 'Setelah tahu Mekarya dapat membuat branding melalui media sosial akhirnya saya mencoba dan berhasil branding',
-          name: 'HOLDEN CAULFIELD',
-          job: 'Senior Product Designer',
+          name: 'Fauzi Badar Bagaskara',
+          job: 'Penjual Toko Online',
           img: require('../assets/images/review1.jpg')
         },
         {
           message: 'Setelah menggunakan Mekarya, branding produk jadi mudah dan gak bikin pusing. Terima kasih Mekarya',
-          name: 'ALPER KAMU',
-          job: 'UI Develeoper',
+          name: 'Zarha Fahira',
+          job: 'UI Designer',
           img: require('../assets/images/review2.jpg')
         },
         {
           message: 'Penggunaan media sosial sebagai media untuk branding produk adalah hal yang luar biasa.',
-          name: 'HENRY LETHAM',
-          job: 'CTO',
+          name: 'Mochammad Rizky Andika W',
+          job: 'Musisi',
           img: require('../assets/images/review3.jpg')
         },
         {
           message: 'Pembuatan desain web yang cepat dan mudah diaplikasikan oleh pengembang web seperti saya',
-          name: 'Edinson Cavani',
-          job: 'Web Developer',
+          name: 'Hamba Panji Saputra',
+          job: 'Fotografer',
           img: require('../assets/images/review4.jpg')
         },
         {
           message: 'Semua orang wajib menggunakan Mekarya karena selai harganya terjangkau juga fasilitasnya memuaskan',
-          name: 'Zidane Mahmud',
-          job: 'Senior Programmer',
+          name: 'Aditya Permana',
+          job: 'Web Programmer',
           img: require('../assets/images/review5.jpg')
         },
         {
           message: 'Tidak ada yang sebaik Mekarya untuk urusan branding produk pada media sosial',
-          name: 'Malidi Iniesta',
-          job: 'CMO',
+          name: 'Salwa Putri Zahra',
+          job: 'Penjual Produk Online',
           img: require('../assets/images/review6.jpg')
         },
       ],

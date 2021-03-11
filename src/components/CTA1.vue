@@ -1,8 +1,8 @@
 <template>
-  <section class="bg-gradient-to-br from-indigo-500 to-purple-500">
+  <section class="bg-gray-800" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
     <div class=" dark:bg-gray-800">
       <div class="z-20 w-full px-4 py-12 mx-auto text-center sm:px-6 lg:py-24 lg:px-8">
-          <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 class="text-2xl font-extrabold text-white sm:text-3xl">
               <span class="block ">
                   Ingin meningkatkan profit bisnis melalui branding ?
               </span>

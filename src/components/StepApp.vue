@@ -1,8 +1,8 @@
 <template>
-<section class="text-gray-600 body-font">
+<section class="text-gray-600 body-font" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
   <div class="container flex flex-wrap px-5 py-24 mx-auto">
     <div class="flex flex-col w-full mb-20 text-center">
-      <h1 class="mb-4 text-3xl font-bold tracking-tight text-gray-900 duration-500 transform sm:text-3xl hover:text-indigo-600 ">Bagaiaman jika kamu ingin order ?</h1>
+      <h1 class="mb-4 text-3xl font-bold tracking-tight text-gray-900 duration-500 transform sm:text-3xl hover:text-indigo-600 ">Bagaimana cara order ?</h1>
       <p class="mx-auto text-base leading-relaxed lg:w-2/3">Ikuti langkah berikut untuk order</p>
     </div>
     <div class="flex flex-wrap w-full">

@@ -1,5 +1,5 @@
 <template>
-  <div class="px-5 py-20 bg-lightblue" id="faq-app">
+  <div class="px-5 py-20 bg-lightblue" id="faq-app" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
     <div class="flex flex-col max-w-6xl mx-auto lg:flex-row">
       <h2 class="w-full pt-8 mr-8 text-3xl font-bold leading-9 tracking-tight lg:w-1/3">
         Pertanyaan dan jawaban yang dapat membantu kamu

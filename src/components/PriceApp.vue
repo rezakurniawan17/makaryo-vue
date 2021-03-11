@@ -1,5 +1,5 @@
 <template>
-  <section class="overflow-hidden text-gray-600 bg-indigo-50" id="price-app">
+  <section data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom" class="overflow-hidden text-gray-600 bg-indigo-50" id="price-app">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col w-full mb-20 text-center">
         <h1 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 duration-500 transform hover:text-indigo-600 sm:text-4xl title-font">Harga dan Paket</h1>

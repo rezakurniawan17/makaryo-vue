@@ -21,7 +21,7 @@
         <!-- Nav Items -->
         <div :class="isOpen ? 'block' : 'hidden'" class="pb-2 mt-4 md:items-center lg:mt-0 lg:pb-0 lg:flex">
         <!-- Nav Items -->
-          <scrollactive :offset="50" active-class="is-active" class="block space-y-1 text-base md:space-y-0 lg:flex md:items-center" id="nav-items">
+          <scrollactive :offset="60" active-class="is-active" class="block space-y-1 text-base md:space-y-0 lg:flex md:items-center" id="nav-items">
             <a href="#app" class="block px-2 py-1 mr-5 is-active scrollactive-item hover:text-indigo-600">Beranda</a>
             <a href="#doing-app" class="block px-2 py-1 mr-5 scrollactive-item hover:text-indigo-600">Tentang</a>
             <a href="#feature-app" class="block px-2 py-1 mr-5 scrollactive-item hover:text-indigo-600">Fitur</a>
