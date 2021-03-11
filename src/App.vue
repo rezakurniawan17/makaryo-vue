@@ -1,6 +1,6 @@
 <template>
   <!-- class="debug-screens" -->
-  <div id="app">
+  <div id="app" class="antialiased">
     <header-app></header-app>
     <hero-app></hero-app>
     <doing-app></doing-app>
@@ -43,6 +43,9 @@ window.onbeforeunload = function () {
 </script>
 
 <style>
+@import
+url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
 #app {
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
