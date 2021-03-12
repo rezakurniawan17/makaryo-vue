@@ -4,10 +4,10 @@
       <div class="z-20 w-full px-4 py-12 mx-auto text-center sm:px-6 lg:py-24 lg:px-8">
           <h2 class="text-2xl font-extrabold text-white sm:text-3xl">
               <span class="block ">
-                  Ingin meningkatkan profit bisnis melalui branding ?
+                Mau dapat penawaran voucher potongan sebesar 500ribu ?
               </span>
               <span class="block">
-                  Sekaranglah saatnya
+                Panawaran terbatas khusus minggu ini!
               </span>
           </h2>
           <div class="lg:mt-0 lg:flex-shrink-0">

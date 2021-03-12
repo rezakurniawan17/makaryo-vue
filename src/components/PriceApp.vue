@@ -14,8 +14,12 @@
           <div :class="{ 'border-2' : priceList.popular, 'border-indigo-500' : priceList.popular }" class="relative flex flex-col h-full p-6 overflow-hidden font-medium bg-white rounded-lg shadow-lg ">
             <span v-if="priceList.popular" class="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest text-white bg-indigo-500 border-b-2 border-l-2 border-indigo-500 rounded-bl">POPULAR</span>
             <h2 class="mb-1 text-sm font-semibold tracking-widest text-gray-600 uppercase title-font">{{ priceList.title }}</h2>
+            <h1 class="flex items-center mt-2 mb-4 text-3xl leading-none text-gray-900 border-gray-200">
+              <span class="line-through">{{ priceList.price }}</span>
+              <span class="ml-1 text-lg font-normal text-gray-500">{{ priceList.per }}</span>
+            </h1>
             <h1 class="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
-              <span>{{ priceList.price }}</span>
+              <span class="font-bold text-indigo-600">{{ priceList.priceFix }}</span>
               <span class="ml-1 text-lg font-normal text-gray-500">{{ priceList.per }}</span>
             </h1>
             <div v-for="feature in priceList.features" :key="feature.id" class="last:mb-6">
@@ -30,7 +34,7 @@
             <div class="mb-3"></div>
             <scrollactive class="mt-auto">
               <a href="#contact-app" class="scrollactive-item">
-                <button class="flex items-center w-full px-4 py-2 mt-auto text-white border-0 rounded bg-amber-500 focus:outline-none hover:bg-amber-600">Pesan Paket
+                <button class="flex items-center w-full px-4 py-2 mt-auto text-white border-0 rounded bg-amber-500 focus:outline-none hover:bg-amber-600">Ambil Penawaran
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
@@ -46,8 +50,14 @@
           <div :class="{ 'border-2' : priceList.popular, 'border-indigo-500' : priceList.popular }" class="relative flex flex-col h-full p-6 overflow-hidden font-medium bg-white rounded-lg shadow-lg ">
             <span v-if="priceList.popular" class="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest text-white bg-indigo-500 border-b-2 border-l-2 border-indigo-500 rounded-bl">POPULAR</span>
             <h2 class="mb-1 text-sm font-semibold tracking-widest text-gray-600 uppercase title-font">{{ priceList.title }}</h2>
+            <h1
+  class="flex items-center mt-2 mb-4 text-3xl leading-none text-gray-900 border-gray-200"
+>
+              <span class="line-through">{{ priceList.price }}</span>
+              <span class="ml-1 text-lg font-normal text-gray-500">{{ priceList.per }}</span>
+            </h1>
             <h1 class="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
-              <span>{{ priceList.price }}</span>
+              <span class="font-bold text-indigo-600">{{ priceList.priceFix }}</span>
               <span class="ml-1 text-lg font-normal text-gray-500">{{ priceList.per }}</span>
             </h1>
             <div v-for="feature in priceList.features" :key="feature.id" class="last:mb-6">
@@ -62,7 +72,7 @@
             <div class="mb-3"></div>
             <scrollactive class="mt-auto">
               <a href="#contact-app" class="scrollactive-item">
-                <button class="flex items-center w-full px-4 py-2 mt-auto text-white border-0 rounded bg-amber-500 focus:outline-none hover:bg-amber-600">Pesan Paket
+                <button class="flex items-center w-full px-4 py-2 mt-auto text-white border-0 rounded bg-amber-500 focus:outline-none hover:bg-amber-600">Ambil Penawaran
                   <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
@@ -85,7 +95,8 @@ export default {
       priceLists1 : [
         {
           title: 'Web Design',
-          price: '599.000',
+          priceFix: '599rb',
+          price: '899rb',
           per: '',
           popular: false,
           features: [
@@ -99,7 +110,8 @@ export default {
         },
         {
           title: 'Web Basic',
-          price: '125.000',
+          priceFix: '125rb',
+          price: '500rb',
           per: '/bln',
           popular: false,
           features: [
@@ -118,7 +130,8 @@ export default {
         },
         {
           title: 'Web Pro',
-          price: '183.000',
+          priceFix: '183rb',
+          price: '300rb',
           per: '/bln',
           popular: true,
           features: [
@@ -139,7 +152,8 @@ export default {
         },
         {
           title: 'Web Ultimate',
-          price: '283.000',
+          priceFix: '283rb',
+          price: '400rb',
           per: '/bln',
           popular: false,
           features: [
@@ -164,7 +178,8 @@ export default {
       priceLists2 : [
         {
           title: 'Branding',
-          price: '399.000',
+          priceFix: '399rb',
+          price: '699rb',
           per: '',
           popular: false,
           features: [
@@ -177,7 +192,8 @@ export default {
         },
         {
           title: 'Sosmed Basic',
-          price: '499.000',
+          priceFix: '499rb',
+          price: '799rb',
           per: '/bln',
           popular: false,
           features: [
@@ -194,7 +210,8 @@ export default {
         },
         {
           title: 'Sosmed Pro',
-          price: '1.200.000',
+          priceFix: '1,2juta',
+          price: '1,5juta',
           per: '/bln',
           popular: true,
           features: [
@@ -214,7 +231,8 @@ export default {
         },
         {
           title: 'Sosmed Ultimate',
-          price: '1.800.000',
+          priceFix: '1,8juta',
+          price: '2,1juta',
           per: '/bln',
           popular: false,
           features: [

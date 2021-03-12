@@ -2,8 +2,8 @@
   <section class="text-gray-600" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col w-full mb-20 text-center">
-        <h1 class="mb-4 text-3xl font-bold tracking-tight text-gray-900 duration-500 transform sm:text-3xl hover:text-indigo-600 ">Pencapaian kami selama 1 tahun</h1>
-        <p class="mx-auto text-base leading-relaxed lg:w-2/3">Dengan kekuatan super kami, inilah yang telah kami capai</p>
+        <h1 class="mb-4 text-3xl font-bold tracking-tight text-gray-900 duration-500 transform sm:text-3xl hover:text-indigo-600 ">Pencapaian kami selama setahun</h1>
+        <p class="mx-auto text-base leading-relaxed lg:w-2/3">Bukti Mekarya telah dipercaya sebagai Brand Value Specialist</p>
       </div>
       <div class="flex flex-wrap -m-4 text-center">
         <div class="w-full p-4 lg:w-1/4 md:w-1/2 sm:w-1/2" v-for="statList in statLists" :key="statList.id">
@@ -38,14 +38,14 @@ export default {
           img: require('../assets/icons/users.svg') 
         },
         { 
+          name: 'Klien Restorasi Branding', 
+          value: '56+',
+          img:require('../assets/icons/search.svg') 
+        },
+        { 
           name: 'Layanan Harian', 
           value: '13+', 
           img:require('../assets/icons/navigation.svg') 
-        },
-        { 
-          name: 'Jangkauan', 
-          value: '300.000',
-          img:require('../assets/icons/search.svg') 
         },
       ]
     }

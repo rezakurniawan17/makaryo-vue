@@ -5,7 +5,7 @@
       <h4 class="text-3xl font-bold leading-8 tracking-tight text-center text-gray-900 duration-500 transform hover:text-indigo-600 lg:text-left dark:text-white sm:leading-9">
           Mengapa Mekarya ?
       </h4>
-      <p class="mt-2 text-center text-gray-600 lg:text-left">Mekarya memiliki banyak pengelaman dalam branding dan sudah dipercaya oleh banyak pihak</p>
+      <p class="mt-2 text-center text-gray-600 lg:text-left">Mekarya telah dipercaya banyak klien untuk membantu menguatkan branding value produk mereka</p>
       <ul class="mt-8">
         <li class="mb-6" v-for="aboutList in aboutLists" :key="aboutList.id">
             <div class="flex p-2 transition-all duration-500 ease-in-out transform bg-white border-2 border-transparent rounded-md group hover:border-indigo-500 hover:-translate-y-2">
@@ -39,23 +39,23 @@ export default {
     return {
       aboutLists: [
         {
-          title: 'Harga Relatif Murah',
-          description: 'Tidak perlu risau tentang harga, Mekarya tidak akan mematok harga yang tinggi',
+          title: 'Harga Lebih Murah',
+          description: 'Biaya berlangganan Mekarya sangat terjangkau dengan pelayanan ekstra untuk membantu meningkatkan branding value produkmu',
           img: require('../assets/icons/money.png')
         },
         {
           title: 'Kualitas Juara',
-          description: 'Hasil yang kami hasilkalkan setara dengan profesional dan dapat dipastikan terbaik',
+          description: 'Mekarya senantiasa menghasilkan output desain yang otentik dan berkarakter kuat',
           img: require('../assets/icons/medal.png')
         },
         {
-          title: 'Pekerja Profesioal',
-          description: 'Profesionalitas adalah visi kami sehingga kami menggunakan tenaga profesional yang tidak main-main',
+          title: 'Dikelola Oleh Tim Handal',
+          description: 'Mekarya memiliki tim yang berkompeten di bidang desain visual dan branding produk',
           img: require('../assets/icons/diploma.png')
         },
         {
-          title: 'Fasilitas Perbaikan',
-          description: 'Tentunya Mekarya akan memberikan fasilitas perbaikan pada setiap paket',
+          title: 'Analisa Pengembangan',
+          description: 'Mekarya membantu memberikan layanan pengembangan branding value produk berdasarkan data yang faktual dan kredibel',
           img: require('../assets/icons/maintenance.png')
         },
       ]

@@ -11,10 +11,10 @@
             <img :src="listDoing.img" alt="">
           </div>
         </div>
-        <h3 class="py-4 text-2xl font-semibold text-gray-700 duration-500 group-hover:text-indigo-600 sm:text-xl dark:text-white">
+        <h3 class="mt-4 mb-2 text-2xl font-semibold text-gray-700 duration-500 group-hover:text-indigo-600 sm:text-xl dark:text-white">
           {{ listDoing.title }}
         </h3>
-        <p class="py-4 text-gray-500 text-md dark:text-gray-300">
+        <p class="pb-4 text-gray-500 text-md dark:text-gray-300">
           {{ listDoing.description }}
         </p>
       </div>
@@ -29,19 +29,19 @@ export default {
       listDoings : [
         {
           title: 'Pembuatan Website',
-          description: 'Mekarya membantu kamu dalam membangun dan merawat website. Kami juga memberikan optimasi website supaya dapat bekerja secara optimal',
+          description: 'Mekarya membantu membangun dan merawat websitemu menjadi top pencarian di mesin pencarian Google',
           img: require('../assets/icons/web.png'),
           translate: false
         },
         {
           title: 'Manajemen Sosial Media',
-          description: 'Mekarya membantu kamu dalam mengatur media sosial untuk keperluan branding serta memberikan copywriting untuk meningkatkan engangement brand kamu',
+          description: 'Mekarya membantu memperbaiki visual media sosialmu dan mengatur segala aktivitasnya',
           img: require('../assets/icons/folder.png'),
           translate: true
         },
         {
-          title: 'Branding Desain',
-          description: 'Mekarya membantu kamu dalam membuat berbagai desain yang dapat menunjang branding produk kamu',
+          title: 'Branding Produk',
+          description: 'Mekarya membantu merestorasi segala desain produk untuk menguatkan branding value produkmu',
           img: require('../assets/icons/design.png'),
           translate: false
         }
