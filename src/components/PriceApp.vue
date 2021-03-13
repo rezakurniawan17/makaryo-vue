@@ -16,7 +16,7 @@
             <h2 class="mb-1 text-sm font-semibold tracking-widest text-gray-600 uppercase title-font">{{ priceList.title }}</h2>
             <h1 class="flex items-center mt-2 mb-4 text-3xl leading-none text-gray-900 border-gray-200">
               <span class="line-through">{{ priceList.price }}</span>
-              <span class="ml-1 text-lg font-normal text-gray-500">{{ priceList.per }}</span>
+              <span class="ml-1 font-normal text-gray-500 text-md">{{ priceList.per }}</span>
             </h1>
             <h1 class="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
               <span class="font-bold text-indigo-600">{{ priceList.priceFix }}</span>
@@ -50,11 +50,9 @@
           <div :class="{ 'border-2' : priceList.popular, 'border-indigo-500' : priceList.popular }" class="relative flex flex-col h-full p-6 overflow-hidden font-medium bg-white rounded-lg shadow-lg ">
             <span v-if="priceList.popular" class="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest text-white bg-indigo-500 border-b-2 border-l-2 border-indigo-500 rounded-bl">POPULAR</span>
             <h2 class="mb-1 text-sm font-semibold tracking-widest text-gray-600 uppercase title-font">{{ priceList.title }}</h2>
-            <h1
-  class="flex items-center mt-2 mb-4 text-3xl leading-none text-gray-900 border-gray-200"
->
+            <h1 class="flex items-center mt-2 mb-4 text-3xl leading-none text-gray-900 border-gray-200">
               <span class="line-through">{{ priceList.price }}</span>
-              <span class="ml-1 text-lg font-normal text-gray-500">{{ priceList.per }}</span>
+              <span class="ml-1 font-normal text-gray-500 text-md">{{ priceList.per }}</span>
             </h1>
             <h1 class="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">
               <span class="font-bold text-indigo-600">{{ priceList.priceFix }}</span>
