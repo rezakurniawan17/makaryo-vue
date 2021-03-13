@@ -1,27 +1,17 @@
 <template>
-  <section class="bg-gray-800" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
-    <div class=" dark:bg-gray-800">
-      <div class="z-20 w-full px-4 py-12 mx-auto text-center sm:px-6 lg:py-24 lg:px-8">
-          <h2 class="text-2xl font-extrabold text-white sm:text-3xl">
-              <span class="block ">
-                Mau dapat penawaran voucher potongan sebesar 500ribu ?
-              </span>
-              <span class="block">
-                Panawaran terbatas khusus minggu ini!
-              </span>
-          </h2>
-          <div class="lg:mt-0 lg:flex-shrink-0">
-              <div class="inline-flex mt-12 rounded-md shadow">
-                  <scrollactive>
-                    <a href="#contact-app" class="scrollactive-item ">
-                        <button type="button" class="w-full px-6 py-4 text-lg font-semibold text-center text-white transition duration-300 rounded-md shadow-md bg-amber-500 hover:bg-amber-600 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ">
-                            Dapatkan Sekarang
-                        </button>
-                    </a>
-                  </scrollactive>
-              </div>
-          </div>
-      </div>
+  <section class="py-24 bg-gray-800" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
+    <div class="w-8/12 p-10 mx-auto text-lg leading-relaxed text-center bg-white rounded-lg shadow-md">
+      <span>Biaya berlangganan Mekarya jauh lebih murah dibandingkan jika kamu memiliki tim
+      kreatif sendiri. Sekarang coba bayangkan jika kamu memiliki tim kreatif yang
+      terdiri dari visual desainer, web developer dan copywriter. Jika gaji mereka
+      masing-masing adalah UMR, maka biaya yang harus kamu keluarkan untuk gaji adalah
+      3 kali lipat UMR. Itupun belum termasuk biaya aset pengembangan web dan sosial
+      media bisnismu. Sedangkan jika kamu berlangganan di Mekarya dengan biaya di
+      bawah UMR, kamu tinggal fokus mengurus bagian produksi saja. Masalah sosial
+      media dan marketing biar Mekarya yang urus.
+      </span>
+      <hr class="w-full mt-4 border border-gray-200">
+      <span class="block mt-4 text-lg italic font-bold text-gray-800">Mekarya Creative Studio</span>
     </div>
   </section>
 </template>

@@ -1,29 +1,28 @@
 <template>
+  <section id="portofolio-app" class="container py-24 mx-auto">
+    <div class="mb-10 text-center">
+      <h1 class="mb-4 text-3xl font-bold tracking-tight text-center text-gray-900 duration-500 transform hover:text-indigo-600 sm:text-3xl">Portofolio Mekarya</h1>
+      <p class="mx-auto text-base leading-relaxed lg:w-2/3">Mekarya telah membuat berbagai branding produk dari banyak klien</p>
+    </div>
+    <div class="grid w-11/12 grid-cols-3 gap-2 mx-auto">
+      <img src="../assets/images/1a.jpg" alt="">
+      <img src="../assets/images/2a.jpg" alt="">
+      <img src="../assets/images/3a.jpg" alt="">
+      <img src="../assets/images/4a.jpg" alt="">
+      <img src="../assets/images/5a.jpg" alt="">
+      <img src="../assets/images/6a.jpg" alt="">
+    </div>
+    <div class="grid w-11/12 grid-cols-3 gap-2 mx-auto mt-10">
+      <img src="../assets/images/1b.jpg" alt="">
+      <img src="../assets/images/2b.jpg" alt="">
+      <img src="../assets/images/3b.jpg" alt="">
+      <img src="../assets/images/4b.jpg" alt="">
+      <img src="../assets/images/5b.jpg" alt="">
+      <img src="../assets/images/6b.jpg" alt="">
+    </div>
 
-<div class="relative overflow-hidden bg-white dark:bg-gray-800 lg:flex lg:items-center">
-    <div class="z-20 w-full px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
-        <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
-            <span class="block">
-                Mother hearth host your travel
-            </span>
-        </h2>
-        <p class="mt-4 text-gray-400 text-md">
-            The state of Utah in the united states is home to lots of beautiful National parks, Bryce national canion park ranks as three of the most magnificient &amp; awe inspiring.
-        </p>
-        <div class="lg:mt-0 lg:flex-shrink-0">
-            <div class="inline-flex mt-12 rounded-md shadow">
-                <button type="button" class="w-full px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-green-500 rounded-lg shadow-md hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ">
-                    Get started
-                </button>
-            </div>
-        </div>
+    <div class="flex justify-center mx-auto mt-12">
+      <button class="px-4 py-2 text-lg tracking-tight text-white bg-indigo-600 rounded-md shadow-sm focus:outline-none hover:bg-indigo-700">Lihat Selengkapnya</button>
     </div>
-    <div class="flex items-center gap-8 p-8 lg:p-24">
-        <img src="../assets/images/portofolio1.png" class="w-1/2 rounded-lg" alt="Tree"/>
-        <div>
-            <img src="../assets/images/portofolio1.png" class="mb-8 rounded-lg" alt="Tree"/>
-            <img src="../assets/images/portofolio1.png" class="rounded-lg" alt="Tree"/>
-        </div>
-    </div>
-</div>
+  </section>
 </template>

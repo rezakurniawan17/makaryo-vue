@@ -6,6 +6,7 @@
     <doing-app></doing-app>
     <feature-app></feature-app>
     <CTA1></CTA1>
+    <portofolio-app></portofolio-app>
     <static-app></static-app>
     <review-app></review-app>
     <price-app></price-app>
@@ -29,11 +30,12 @@ import StaticApp from './components/StaticApp.vue'
 import DoingApp from './components/DoingApp.vue'
 import CTA1 from './components/CTA1.vue'
 import ContactApp from './components/ContactApp.vue'
+import PortofolioApp from './components/PortofolioApp.vue'
 
 export default {
   name: 'App',
   components: {
-    FeatureApp, FaqApp, FooterApp, DoingApp, HeaderApp, HeroApp, PriceApp, ReviewApp, StepApp, StaticApp, CTA1, ContactApp
+    FeatureApp, FaqApp, FooterApp, DoingApp, HeaderApp, HeroApp, PriceApp, ReviewApp, StepApp, StaticApp, CTA1, ContactApp, PortofolioApp,
   }
 }
 
